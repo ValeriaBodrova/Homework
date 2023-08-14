@@ -83,3 +83,21 @@ let age = prompt("Введіть ваш вік:");
 alert(age && age >= 18 && age <= 28 ? "Hello" : "Goodbye");
 
 
+//homework 5
+
+let start = prompt('Кто пришел?');
+
+if(start === 0) {
+    alert('Вход отменен');
+} else if(start !== "Админ") {
+    alert('Я вас не знаю');
+} else if(start === "Админ"){
+    let password = prompt('Пароль?')
+    if(password === 0){
+        alert('Вход отменен');
+    } else if(password !== "Черный Властелин"){
+        alert('пароль неверен');
+    } else if(password === "Черный Властелин"){
+        alert('Добро пожаловать!');
+    };
+}
