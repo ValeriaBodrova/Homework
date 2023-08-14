@@ -101,3 +101,40 @@ if(start === 0) {
         alert('Добро пожаловать!');
     };
 }
+
+// homework6
+
+let numOrStr = prompt('input number or string');
+console.log(numOrStr);
+
+switch (true) {
+    case (numOrStr === null):
+        console.log('ви скасували');
+        break;
+    case (numOrStr.trim() === ''):
+        console.log('Empty String');
+        break;
+    case (isNaN(+numOrStr)):
+        console.log('number is Ba_NaN');
+        break;
+    default:
+        console.log('OK!');
+}
+
+//homework7 є окремим файлом 
+
+// homework8
+
+let A = [];
+for (let i = 0; i < 10; i++) {
+    A.push(Math.floor(Math.random() * 100) + 1);
+}
+
+console.log("Початковий масив:", A);
+
+
+for (let i = 1; i < A.length; i += 2) {
+    A[i] = 0;
+}
+
+console.log("Модифікований масив:", A);
