@@ -49,3 +49,37 @@ console.log("--------------");
 console.log("Середній вік студента:", averageAge);
 console.log("--------------");
 console.log("**************");
+
+//homework4
+
+// 1. Запит ім’я користувача:
+// 1.1. Перевірка на порожній рядок:
+
+let userName = prompt("Введіть ваше ім'я:") || "anonym";
+alert(userName);
+
+
+// 1.2. Перевірка на "admin":
+
+alert(userName === "admin" ? "Hello admin" : "Welcome"); 
+
+// 2. Отримання даних login, password, age від користувача:
+// 2.1. Перевірка, чи порожні login і password:
+
+let login = prompt("Введіть ваш login:");
+let password = prompt("Введіть ваш password:");
+alert((login && password) ? 'welcome' : 'login or password incorrect');
+
+
+// 2.2. Визначення, яке поле порожнє:
+
+!login && alert('Login is empty');
+!password && alert('Password is empty');
+
+
+//2.3. Перевірка age:
+
+let age = prompt("Введіть ваш вік:");
+alert(age && age >= 18 && age <= 28 ? "Hello" : "Goodbye");
+
+
